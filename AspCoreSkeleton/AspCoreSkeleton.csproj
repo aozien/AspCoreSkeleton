@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>aspnet-ZienProject-A07982E9-7614-42D3-8E30-CD2C12F569E8</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Data\Migrations\20200928065219_initializeDB.cs" />
+    <Compile Remove="Data\Migrations\20200928065219_initializeDB.Designer.cs" />
+    <Compile Remove="Data\Migrations\20200928123600_seedingDatabase.cs" />
+    <Compile Remove="Data\Migrations\20200928123600_seedingDatabase.Designer.cs" />
+    <Compile Remove="Data\Migrations\20200928124027_seedingDatabase.cs" />
+    <Compile Remove="Data\Migrations\20200928124027_seedingDatabase.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="3.1.8" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.8" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="3.1.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.8" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\Images\" />
+  </ItemGroup>
+
+</Project>
